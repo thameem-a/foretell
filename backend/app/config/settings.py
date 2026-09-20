@@ -27,4 +27,6 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    database_url: SecretStr = Field(validation_alias="DATABASE_URL")
+    database_url: SecretStr = Field(validation_alias = "DATABASE_URL")
+
+    kalshi_url: str = Field(validation_alias = "KALSHI_URL")
